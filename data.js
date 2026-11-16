@@ -244,6 +244,14 @@ var E=[
 ["2027-06-05","Jun 5","Manhattan Wine Auction","Manhattan Beach","Not found","food","w","Date confirmed, details pending.","https://mbef.org/?p=52734"],
 ["2027-07-17","Jul 17, 1 to 4:30pm","California Wine Festival: Beachside Wine Festival","Chase Palm Park, Santa Barbara","On sale 2027","food","l","Tourism listing only; organizer page not checked.","https://santabarbaraca.com/events/california-wine-festival-beachside-wine-festival/"],
 ["2027-07-23","Jul 23 to 25","Wine Over LA 10th anniversary weekend (dinner, Santa Barbara County wine tour, yacht party)","LA City Center, Solvang, Marina del Rey","$750 per person","food","ok","Paid package from Zuri Wine Tasting.","https://zuriwine.wetravel.com/trips/wine-over-la-10-year-anniversary-weekend-zuri-wine-tasting-4321850877"]
+
+,
+["2026-11-15","Nov 15, 7pm","Lucha Wrestling Puroresu","Xander Sports, Carson","","wrestling","l","Listing site only.","https://socaluncensored.com/events/list/"],
+["2026-12-06","Dec 6, 5pm","East Los Lucha: East Los Christmas","Don Quixote, Los Angeles","","wrestling","l","Listing body says Dec 20. Verify.","https://socaluncensored.com/event/east-los-lucha-presents-east-los-christmas-in-los-angeles-ca-2/"],
+["2026-12-11","Dec 11","Santino Bros Wrestling: Fight Night, Kristmas Kaos","VFW Post 8070, Azusa","","wrestling","l","Start time conflicts in the listing.","https://socaluncensored.com/event/santino-bros-wrestling-presents-fight-night-kristmas-kaos-in-azusa-ca/"],
+["2026-12-12","Dec 12, 8pm","Lucha Goth Haus: Noche de Krampus 3 (21+)","Don Quixote, Los Angeles","","wrestling","l","Listing site only.","https://socaluncensored.com/event/lucha-goth-haus-presents-noche-de-krampus-3-in-los-angeles-ca-21/"],
+["2026-12-19","Dec 19, 8pm","GCW: Highest in the Room 5","Ukrainian Culture Center, Los Angeles","","wrestling","l","Listing site only.","https://socaluncensored.com/event/game-changer-wrestling-presents-highest-in-the-room-5-in-los-angeles-ca/"],
+["2027-01-30","Jan 30, 7pm","Underground Empire Wrestling: FTW '27","Florence Arena, Los Angeles","","wrestling","l","Listing site only.","https://socaluncensored.com/event/underground-empire-wrestling-presents-ftw-27-in-los-angeles-ca/"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -260,6 +268,7 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"No 2027 dates found for AEW, TNA, ROH, UFC or PFL in LA or OC. PWG reportedly left its Reseda venue. WrestleMania 43 watch parties so far are New York only.",
 "More wine with no 2027 dates yet, from 2026 timing: Paso BlendFest on the Coast (Feb), Santa Ynez Wine Country Weekend (Presidents Day weekend), Ojai Wine Festival (June), Santa Barbara Vintners Festival (Oct), California Wine Festival Huntington Beach (Oct). The Temecula Balloon and Wine Festival lost its organizer contract in 2026, so it may not return.",
 "Beer events with no 2027 dates yet, based on 2026 timing: LA Beer Week kickoff (June, Long Beach, 2026 tickets $70), Karl Strauss anniversary (late Jan to early Feb, all brewpubs), Beachwood Brewing anniversary (July), Stone anniversary (August; Stone changed owners in Sept 2026), Craft Beer LB Fest (September), Old World Oktoberfest in Huntington Beach (Sept to early Nov), CraftoberFest at the Rose Bowl (October).",
 "Angel City Brewery closed permanently April 30, 2026.",
