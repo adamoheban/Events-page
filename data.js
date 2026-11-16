@@ -327,6 +327,11 @@ var E=[
 ["2027-04-03", "Apr 3", "Long Beach Half Marathon", "Long Beach", "", "runs", "l", "Listing only.", "https://running.life"],
 ["2027-06-04", "Jun 4", "Stewart Copeland", "Santa Barbara Bowl", "", "music", "ok", "", "https://songkick.com/concerts/43511672-stewart-copeland-at-santa-barbara-bowl"],
 ["2027-06-05", "Jun 5, 8am", "Santa Barbara Wine Country Half Marathon", "Solvang area", "", "runs", "w", "", "https://ultrasignup.com/register.aspx?eid=20861"]
+,
+["2026-11-17", "Nov 17", "Steve and Friends cooking dinner, second of two", "Rossoblu, Los Angeles", "", "food", "l", "Year and details inferred from a roundup. Confirm with the restaurant.", "https://lamag.com/food/october-2026-los-angeles-food-news-burger-she-wrote-brentwood-beverly-hills-autumn-bbq-pizzeria-seis-omakasei-collaboration-series/"],
+["2026-11-19", "Nov 19, 6:30pm", "Rhone Wars wine tasting dinner", "The East Angel, Arts District", "$79 to $211", "food", "l", "Listing only. End time conflicts between sources.", "https://happeningnext.com/event/rhône-wars-the-east-angel-thurs-november-19th-at-6-30pm-eid1ef0kv7119oa"],
+["2027-01-15", "Jan 15 to 29", "Dine LA Winter restaurant week", "Citywide, including Pasadena and Long Beach", "Prix fixe, varies", "food", "ok", "Book each restaurant directly.", "https://www.discoverlosangeles.com/dinela"],
+["2027-03-07", "Mar 7 to 13", "OC Restaurant Week", "Orange County", "2026 tiers were $15 to $120", "food", "ok", "2027 prices not posted.", "https://enjoyorangecounty.com/orange-county-restaurant-week/"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -343,6 +348,7 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"Restaurant leads to confirm: Noma LA pop-up (about $1,500 per diner, Tock page exploretock.com/noma-la), Bello in Newport Beach Tock events, Chefsgiving at Pendry Newport Beach, Rafu Market omakase holiday dinner. Not found for the window: guest sushi chefs and omakase pop-ups, Smorgasburg LA 2027, Nisei Week 2027, Taste of OC, Valentine's and New Year's Eve 2026 prix fixe menus. A lot of sushi and chef collab news is posted on Instagram, which I couldn't search.",
 "Brewery leads with no confirmed date yet: The Bruery 2026 Black Tuesday release party and weekly tasting-room trivia (Wed) and bingo (Tue), Three Weavers anniversary fest, Pocock anniversary festival (was early Dec 2025), Beachwood Huntington Beach anniversary (was Dec 13, 2025), Stone Christmas Eve. Most breweries post events only on their own pages or Instagram, so check those.",
 "Not found: Santa Barbara Old Spanish Days and Summer Solstice 2027 dates, Queen Mary holiday and New Year's Eve 2026 dates, Belmont Shore and Naples boat parades 2026, Long Beach Pride 2027, Long Beach Marathon 2027.",
 "Pasadena recurring: Norton Simon free first Fridays 4 to 7pm (Dec 4, Feb 5, Mar 5 and so on), Rose Bowl Flea Market 2nd Sunday ($15), PCC Flea 1st Sunday. Not found for 2027: Pasadena POPS, Santa Anita winter meet, Caltech Watson Lectures, Doo Dah Parade, JPL open house.",
