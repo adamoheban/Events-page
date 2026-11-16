@@ -252,6 +252,8 @@ var E=[
 ["2026-12-12","Dec 12, 8pm","Lucha Goth Haus: Noche de Krampus 3 (21+)","Don Quixote, Los Angeles","","wrestling","l","Listing site only.","https://socaluncensored.com/event/lucha-goth-haus-presents-noche-de-krampus-3-in-los-angeles-ca-21/"],
 ["2026-12-19","Dec 19, 8pm","GCW: Highest in the Room 5","Ukrainian Culture Center, Los Angeles","","wrestling","l","Listing site only.","https://socaluncensored.com/event/game-changer-wrestling-presents-highest-in-the-room-5-in-los-angeles-ca/"],
 ["2027-01-30","Jan 30, 7pm","Underground Empire Wrestling: FTW '27","Florence Arena, Los Angeles","","wrestling","l","Listing site only.","https://socaluncensored.com/event/underground-empire-wrestling-presents-ftw-27-in-los-angeles-ca/"]
+,
+["2027-05-08","May 8, 2 to 8pm","Tequila and Mezcal Festival","Pershing Square, Downtown LA","GA and VIP tiers, price not listed","food","w","Date and venue confirmed on Eventbrite.","https://www.eventbrite.com/e/tequila-and-mezcal-festival-tickets-1988945158510"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -268,6 +270,7 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"Spirits: no 2027 dates found for Whisky Live LA or LA Cocktail Week. Brouwerij West in San Pedro was reported in July 2026 to be closing.",
 "No 2027 dates found for AEW, TNA, ROH, UFC or PFL in LA or OC. PWG reportedly left its Reseda venue. WrestleMania 43 watch parties so far are New York only.",
 "More wine with no 2027 dates yet, from 2026 timing: Paso BlendFest on the Coast (Feb), Santa Ynez Wine Country Weekend (Presidents Day weekend), Ojai Wine Festival (June), Santa Barbara Vintners Festival (Oct), California Wine Festival Huntington Beach (Oct). The Temecula Balloon and Wine Festival lost its organizer contract in 2026, so it may not return.",
 "Beer events with no 2027 dates yet, based on 2026 timing: LA Beer Week kickoff (June, Long Beach, 2026 tickets $70), Karl Strauss anniversary (late Jan to early Feb, all brewpubs), Beachwood Brewing anniversary (July), Stone anniversary (August; Stone changed owners in Sept 2026), Craft Beer LB Fest (September), Old World Oktoberfest in Huntington Beach (Sept to early Nov), CraftoberFest at the Rose Bowl (October).",
