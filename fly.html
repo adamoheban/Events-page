@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Worth a Flight</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+
+:root{
+  --bg:#f6f7f9; --surface:#ffffff; --fg:#14181f; --muted:#5a6472; --line:#dfe3e9;
+  --accent:#0b5cad; --accent-soft:#e4eefa;
+  --c-baseball:#0b5cad; --c-sports:#b4540a; --c-music:#8a2b86; --c-film:#a3283d; --c-food:#1a7a4c; --c-markets:#7a6a12; --c-holiday:#2d7f94;
+  --ok:#1a7a4c; --warn:#a36200; --low:#8a93a0;
+  --font-display:'Space Grotesk',system-ui,sans-serif; --font-body:'Inter',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1319; --surface:#171c24; --fg:#e8ebf0; --muted:#9aa4b2; --line:#2a313c;
+  --accent:#6aa9ee; --accent-soft:#1b2a3d;
+  --c-baseball:#6aa9ee; --c-sports:#f0a05e; --c-music:#d98ad4; --c-film:#f08a9b; --c-food:#5fd09a; --c-markets:#d8c55e; --c-holiday:#6fc7dc;
+  --ok:#5fd09a; --warn:#e5b04d; --low:#7f8896; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1319; --surface:#171c24; --fg:#e8ebf0; --muted:#9aa4b2; --line:#2a313c;
+  --accent:#6aa9ee; --accent-soft:#1b2a3d;
+  --c-baseball:#6aa9ee; --c-sports:#f0a05e; --c-music:#d98ad4; --c-film:#f08a9b; --c-food:#5fd09a; --c-markets:#d8c55e; --c-holiday:#6fc7dc;
+  --ok:#5fd09a; --warn:#e5b04d; --low:#7f8896; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--font-body);margin:0;padding-block:24px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:980px;margin:0 auto}
+h1{font:700 clamp(24px,5vw,34px)/1.1 var(--font-display);margin:6px 0 6px;text-wrap:balance}
+a.back{color:var(--accent);font-weight:600;text-decoration:none;font-size:14px}
+p.meta{margin:0;color:var(--muted);max-width:68ch}
+.week{margin:18px 0 6px}
+.week h2{font:700 20px var(--font-display);margin:0 0 4px}
+.wk{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:10px}
+.wk .day{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;min-width:0}
+.wk .day.today{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.wk .day h3{font:600 13px var(--font-body);margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.wk .ev{font-size:13px;line-height:1.35;margin:0 0 7px;padding-left:8px;border-left:3px solid var(--cc,var(--accent));overflow-wrap:anywhere}
+.wk .ev a{color:var(--fg);text-decoration:none;font-weight:500}
+.wk .ev a:hover{text-decoration:underline}
+.wk .ev small{display:block;color:var(--muted)}
+.wk .none{color:var(--muted);font-size:13px;margin:0}
+
+h2{font:700 20px var(--font-display);margin:28px 0 10px}
+.card{display:grid;grid-template-columns:120px 1fr;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:0 0 10px}
+.card .when{font:600 13px var(--font-body);color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
+.card h3{font:600 16px var(--font-display);margin:0 0 2px}
+.card h3 a{color:var(--fg);text-decoration:none}
+.card h3 a:hover{text-decoration:underline}
+.card p{margin:2px 0;font-size:14px}
+.card .where{color:var(--muted)}
+.card .det{color:var(--muted);font-size:13px}
+.card .urg{color:var(--warn);font-size:13px;font-weight:500}
+@media(max-width:560px){.card{grid-template-columns:1fr;gap:4px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">&larr; Back to the calendar</a>
+<h1>Worth a flight</h1>
+<p class="meta">A short, selective list of weekend trips, built from your interests: eclipses, wrestling's biggest shows, baseball pilgrimages, cigars and a few top-tier events. Costs marked estimated are unverified. Dates and on-sale details come from news and venue listings as of Nov 15, 2026.</p>
+<h2>Top picks</h2><article class="card"><div class="when">Aug 2, 2027</div><div class="body"><h3><a href="https://www.space.com/16-best-places-to-see-2027-total-solar-eclipse" target="_blank" rel="noopener">Total solar eclipse at Luxor, Egypt</a></h3><p class="where">Luxor, Egypt</p><p>The longest, clearest totality on the path. This is the one to plan around.</p><p class="det">6 min 20 s of totality, under 1% cloud chance · Group packages only; no public prices</p><p class="urg">Critical: Egyptian tours are reported selling out. Check against your August Egypt dates.</p></div></article><article class="card"><div class="when">Aug 2, 2027</div><div class="body"><h3><a href="https://www.space.com/16-best-places-to-see-2027-total-solar-eclipse" target="_blank" rel="noopener">Total solar eclipse in southern Spain</a></h3><p class="where">Tarifa (Isla de las Palomas), Spain</p><p>The easier alternative to Egypt, with a real risk of Levanter cloud.</p><p class="det">4 min 39 s of totality, about 14% cloud chance. Gibraltar gives 4 min 26 s but clouds more. · Hotel rates already spiking</p><p class="urg">Critical: book now if this is your option.</p></div></article><article class="card"><div class="when">Jan 4, 2027</div><div class="body"><h3><a href="https://www.fightful.com/wrestling-news/njpw-announces-wrestle-kingdom-2027-2028-dates-airs-ai-video-message-from-antonio-inoki/" target="_blank" rel="noopener">NJPW Wrestle Kingdom 21</a></h3><p class="where">Tokyo Dome, Tokyo</p><p>The biggest pro wrestling show of the year, in the Tokyo Dome.</p><p class="det">About $70 to $140 (estimated)</p><p class="urg">On-sale date not found. Last year&#x27;s show sold out in days.</p></div></article><article class="card"><div class="when">Feb 6, 2027</div><div class="body"><h3><a href="https://www.wwe.com/article/glendale-to-host-40th-annual-royal-rumble-on-saturday-feb-6-at-state-farm-stadium" target="_blank" rel="noopener">WWE Royal Rumble (40th)</a></h3><p class="where">State Farm Stadium, Glendale, AZ</p><p>A short flight from LA, in a 73,000-seat stadium, and the winner gets a WrestleMania 43 title shot.</p><p class="det">About $100 to $300 (estimated)</p><p class="urg">Presale Nov 16 and 17, general on-sale Nov 18 at noon ET via SeatGeek.</p></div></article><article class="card"><div class="when">Jul 12-13, 2027</div><div class="body"><h3><a href="https://www.espn.com/mlb/story/_/id/45880323/wrigley-field-cubs-host-2027-all-star-game" target="_blank" rel="noopener">MLB Home Run Derby and All-Star Game</a></h3><p class="where">Wrigley Field, Chicago</p><p>The first All-Star Game at Wrigley since 1990.</p><p class="det">$300 and up (estimated)</p><p class="urg">On-sale not found. Expect a fast sell-out.</p></div></article><article class="card"><div class="when">Aug 12, 2027</div><div class="body"><h3><a href="https://bleacherreport.com/articles/25471063-red-sox-vs-royals-set-2027-mlb-field-dreams-game-scheduled-date-announced" target="_blank" rel="noopener">MLB Field of Dreams Game: Red Sox vs. Royals</a></h3><p class="where">Dyersville, IA</p><p>Baseball on the original movie diamond.</p><p class="det">$150 to $400 (estimated)</p><p class="urg">On-sale not found. The 2022 game sold out quickly.</p></div></article><article class="card"><div class="when">Feb 16-19, 2027</div><div class="body"><h3><a href="https://www.cigaraficionado.com/article/registration-opens-for-2027-procigar-festival-in-dominican-republic" target="_blank" rel="noopener">ProCigar Festival (19th)</a></h3><p class="where">Santiago, Dominican Republic</p><p>The cigar world&#x27;s biggest festival, in the heart of Dominican cigar country.</p><p class="det">Not published</p><p class="urg">Registration is open now.</p></div></article><h2>Strong second tier</h2><article class="card"><div class="when">Aug 19, 2027</div><div class="body"><h3><a href="https://www.mlb.com/news/press-release-blue-jays-and-chicago-cubs-to-play-in-the-2027-mlb-little-league-classic" target="_blank" rel="noopener">MLB Little League Classic: Blue Jays vs. Cubs</a></h3><p class="where">Williamsport, PA</p><p>An MLB game inside the Little League World Series.</p><p class="det">$100 to $250 (estimated)</p><p class="urg">On-sale not found. Small stadium.</p></div></article><article class="card"><div class="when">Jan 28-30, 2027</div><div class="body"><h3><a href="https://www.jambase.com/article/metallica-tour-dates-las-vegas-sphere-2026-2027" target="_blank" rel="noopener">Metallica at Sphere</a></h3><p class="where">Las Vegas</p><p>Metallica in the Sphere&#x27;s full-dome format, one short flight away.</p><p class="det">Check resale</p><p class="urg">Probably sold out. Presale opened in March 2026.</p></div></article><article class="card"><div class="when">Jan 14, 2027</div><div class="body"><h3><a href="https://www.ticketnews.com/2026/07/john-mulaney-takes-manhattan-tour-2027/" target="_blank" rel="noopener">John Mulaney at Radio City</a></h3><p class="where">New York</p><p>Stand-up in a 6,000-seat room.</p><p class="det">Not published</p><p class="urg">Presale through Mulaney&#x27;s site; part of a Jan 7-15 run across 9 venues.</p></div></article><article class="card"><div class="when">Mar 5-8, 2027</div><div class="body"><h3><a href="https://tobaccoreporter.com/?p=168481" target="_blank" rel="noopener">PCA27 cigar trade show</a></h3><p class="where">Las Vegas</p><p>The industry&#x27;s main annual show, with new releases and producer access.</p><p class="det">Trade show</p><p class="urg">Public access not confirmed.</p></div></article><article class="card"><div class="when">Mar 3-7, 2027</div><div class="body"><h3><a href="https://thelocalpalate.com/events/charleston-wine-food-2027/" target="_blank" rel="noopener">Charleston Wine + Food Festival</a></h3><p class="where">Charleston, SC</p><p>A top Southern food and wine festival.</p><p class="det">Signature dinners about $95 to $350 (2026 pricing)</p><p class="urg">Tickets probably on sale since October. Verify.</p></div></article><article class="card"><div class="when">Sep 16-19, 2027</div><div class="body"><h3><a href="https://www.breakingbourbon.com/bourbon-whiskey-press-releases/the-kentucky-bourbon-festival-announces-2027-dates" target="_blank" rel="noopener">Kentucky Bourbon Festival</a></h3><p class="where">Bardstown, KY</p><p>The original bourbon festival, in the bourbon capital.</p><p class="det">Not announced</p><p class="urg">2027 on-sale TBA. 2026 sold out for the fifth year running.</p></div></article><article class="card"><div class="when">Feb 7-10, 2027</div><div class="body"><h3><a href="https://www.postwrestling.com/?p=140254" target="_blank" rel="noopener">AEW Dynasty and London Dynamite</a></h3><p class="where">Liverpool and London</p><p>AEW&#x27;s first UK trip since Wembley, with a pay-per-view and a TV show in one trip.</p><p class="det">About £40 to £90 (estimated)</p><p class="urg">On-sale not found.</p></div></article><h2>Deadlines worth putting on the calendar</h2><article class="card"><div class="when">Nov 18, 2026</div><div class="body"><h3><a href="https://www.wwe.com/article/glendale-to-host-40th-annual-royal-rumble-on-saturday-feb-6-at-state-farm-stadium" target="_blank" rel="noopener">Royal Rumble general on-sale</a></h3><p class="where">Online</p><p>See above.</p><p class="urg">Noon ET</p></div></article><article class="card"><div class="when">Feb 1 to Mar 1, 2027</div><div class="body"><h3><a href="https://www.shedreamsofalpine.com/blog/permit-deadlines-and-reservations-for-popular-california-hiking-trails-and-campsites" target="_blank" rel="noopener">Mount Whitney permit lottery (approximate)</a></h3><p class="where">Eastern Sierra, CA</p><p>Highest summit in the lower 48, a drive from LA.</p><p class="det">$6 per application</p><p class="urg">2027 dates not posted yet. Based on the 2026 pattern.</p></div></article><article class="card"><div class="when">Mar 1-31, 2027</div><div class="body"><h3><a href="https://www.nps.gov/yose/planyourvisit/hdpermits.htm" target="_blank" rel="noopener">Half Dome preseason lottery (approximate)</a></h3><p class="where">Yosemite, CA</p><p>Your top goal.</p><p class="det">$10 per application, $10 per person if drawn</p><p class="urg">2027 dates not posted yet. Results mid-April. A daily lottery also runs two days before each hike.</p></div></article><article class="card"><div class="when">Dec 13-14, 2026</div><div class="body"><h3><a href="https://www.farmersalmanac.com/the-december-geminids-19860" target="_blank" rel="noopener">Geminids meteor shower peak</a></h3><p class="where">Any dark-sky site</p><p>A thin moon sets around 9 pm, so conditions are close to ideal for a cheap weekend add-on.</p><p class="det">Free</p><p class="urg">No booking.</p></div></article>
+</div>
+</body>
+</html>
