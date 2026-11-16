@@ -281,6 +281,16 @@ var E=[
 ["2026-12-18", "Dec 18 to 20", "Lucius", "Largo at the Coronet, West Hollywood", "", "music", "l", "Three nights. Listing only.", "https://songkick.com/concerts/43397856"],
 ["2026-12-19", "Dec 19, 8pm", "Pokey LaFarge", "Lodge Room, Highland Park", "", "music", "l", "Listing only.", "https://tickpick.com/buy-pokey-lafarge-tickets-lodge-room-highland-park-12-19-26-8pm/7961152"],
 ["2026-12-30", "Dec 30 to 31", "Seth MacFarlane", "Blue Note LA", "", "music", "l", "Two nights. Listing only.", "https://songkick.com/concerts/43502580"]
+,
+["2026-11-19", "Nov 19 (also Jan 21, Mar 18, May 20, Jul 15)", "Audubon Bolsa Chica walk", "Bolsa Chica, Huntington Beach", "Free", "outdoor", "ok", "Courtesy RSVP on Eventbrite.", "https://seaandsageaudubon.org/field-trips/"],
+["2026-11-20", "Nov 20 to Jan 10, select evenings", "LA Zoo Lights (Animals Aglow)", "Los Angeles Zoo", "From $19", "holiday", "ok", "Closed several nights, including Nov 26 and Dec 24, 25.", "https://lazoo.org/plan-your-visit/special-experiences/zoolights"],
+["2026-11-22", "Nov 22 to Jan 9, 5:30 to 10pm", "Enchanted Forest of Light", "Descanso Gardens, La Canada Flintridge", "Adults about $29 to $52", "holiday", "w", "Price from an aggregator. Closed Nov 26 and Dec 25. Buy early.", "https://thrillzing.com/seasonal-events/enchanted-forest-of-light-2026-descanso-gardens/"],
+["2026-11-22", "Nov 22, 12:30 to 2pm", "Tidepool Walk", "Cabrillo Marine Aquarium, San Pedro", "Not listed", "outdoor", "ok", "", "https://cma.recreation.parks.lacity.gov/events"],
+["2026-12-04", "Dec 4 and Jan 1, 7 to 8:30pm", "Malibu Creek Night Hike: Park After Dark", "Malibu Creek State Park", "Free, parking $12", "outdoor", "ok", "No RSVP.", "https://malibucreekstatepark.org/programs/"],
+["2026-12-13", "Dec 13 (monthly through Aug 2027)", "Sea and Sage Audubon walk", "San Joaquin Wildlife Sanctuary, Irvine", "Free", "outdoor", "ok", "Monthly second Sunday-ish. Courtesy RSVP.", "https://seaandsageaudubon.org/field-trips/"],
+["2026-12-16", "Dec 16 (monthly through Aug 2027)", "Audubon Upper Newport Bay pontoon trip", "Upper Newport Bay", "$25", "outdoor", "ok", "Eventbrite required.", "https://seaandsageaudubon.org/field-trips/"],
+["2026-12-28", "Late Dec to mid Apr", "Island Packers gray whale watch (3 to 3.5 hours)", "Ventura and Oxnard harbors", "$49 adult", "outdoor", "w", "Page undated. Several trips a week.", "https://islandpackers.com/whale-watching-tours"],
+["2027-01-23", "Jan 23 (also May 1, Aug 21)", "Audubon pelagic trip", "Dana Point", "Fee not stated", "outdoor", "ok", "Eventbrite required.", "https://seaandsageaudubon.org/field-trips/"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -297,6 +307,7 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"Nature windows without exact dates: Goleta Ellwood monarch grove (Oct to Feb, peak mid-Dec, free, about 1h45m away), Antelope Valley Poppy Reserve (bloom Mar to May, peak mid-April, 2027 dates not announced), Joshua Tree Night Sky Festival (2027 not announced). No 2027 fee-free park days or America the Beautiful price found.",
 "Small-venue gaps: Resident, Satellite, Hotel Cafe, Echo, Roxy, Baked Potato, Groundlings, UCB and Netflix Is A Joke Fest 2027 had no dates found. Pappy and Harriet's in Pioneertown has shows (Swervedriver Dec 10, Buck Meek Dec 11) but is in the high desert, about 2.5 hours away.",
 "Big touring acts with no LA or OC 2027 date found yet: Iron Maiden (closest is San Bernardino Apr 24), Guns N' Roses, Billie Eilish, Dua Lipa, Green Day, Red Hot Chili Peppers, Deftones, Kendrick Lamar, Linkin Park, Pearl Jam, Tool. The venue calendars for the Forum, Honda Center and Crypto.com Arena could not be opened.",
 "Spirits: no 2027 dates found for Whisky Live LA or LA Cocktail Week. Brouwerij West in San Pedro was reported in July 2026 to be closing.",
