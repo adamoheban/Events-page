@@ -291,6 +291,15 @@ var E=[
 ["2026-12-16", "Dec 16 (monthly through Aug 2027)", "Audubon Upper Newport Bay pontoon trip", "Upper Newport Bay", "$25", "outdoor", "ok", "Eventbrite required.", "https://seaandsageaudubon.org/field-trips/"],
 ["2026-12-28", "Late Dec to mid Apr", "Island Packers gray whale watch (3 to 3.5 hours)", "Ventura and Oxnard harbors", "$49 adult", "outdoor", "w", "Page undated. Several trips a week.", "https://islandpackers.com/whale-watching-tours"],
 ["2027-01-23", "Jan 23 (also May 1, Aug 21)", "Audubon pelagic trip", "Dana Point", "Fee not stated", "outdoor", "ok", "Eventbrite required.", "https://seaandsageaudubon.org/field-trips/"]
+,
+["2026-11-24", "Nov 24, 6:53am", "Beaver supermoon", "Anywhere", "", "astro", "ok", "Full moon at perigee. Another supermoon Dec 23 (5:28pm) and Jan 22, 2027.", "https://starwalk.space/en/news/full-moon-december-cold-moon"],
+["2027-01-03", "Jan 3", "Venus at greatest western elongation (47 degrees)", "Morning sky, Dec to about Mar 1", "", "astro", "ok", "", "https://telescopeadvisor.com"],
+["2027-01-22", "Jan 20 to 31", "Comet 2P/Encke in binoculars (low west after sunset)", "Dark spot with a clear west horizon", "", "astro", "l", "Forecast brightness conflicts between sources. Closest Feb 3.", "https://telescopeadvisor.com"],
+["2027-02-11", "Feb 11", "Jupiter at opposition", "Evening sky, any dark spot", "", "astro", "ok", "Mars opposition follows Feb 19.", "https://derekscope.com"],
+["2027-02-19", "Feb 19", "Mars at opposition", "Evening sky", "", "astro", "ok", "", "https://derekscope.com"],
+["2027-04-22", "Apr 22 evening", "Lyrid meteors", "Dark sky", "", "astro", "ok", "Poor year: moon about 96% lit.", "https://imo.net/files/meteor-shower/cal2027.pdf"],
+["2027-05-06", "May 6, about 2am", "Eta Aquariid meteors", "Dark sky, pre-dawn", "", "astro", "ok", "Best 2027 shower: new moon the same night.", "https://imo.net/files/meteor-shower/cal2027.pdf"],
+["2027-10-18", "Oct 18", "Saturn at opposition", "All night, rises at sunset", "", "astro", "ok", "Orionids peak Oct 22, moon after midnight.", "https://telescopeadvisor.com"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -307,6 +316,7 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"Moon phases for dark-sky planning (Pacific time, from USNO): new moons Jan 7 (12:24pm), Feb 6, Mar 8, Apr 6, May 6, Jun 4, Jul 3, Aug 2, Aug 31, Sep 29, Oct 29, Nov 27, Dec 27, 2027. Full moons Jan 22, Feb 20, Mar 22, Apr 20, May 20, Jun 18, Jul 18, Aug 17, Sep 15, Oct 15, Nov 13, Dec 13, 2027. Also: Starship test flights, ISS and Starlink pass times for LA, and Vandenberg launches after 2026 were not found; Heavens-Above and Spot the Station are the tools to check.",
 "Nature windows without exact dates: Goleta Ellwood monarch grove (Oct to Feb, peak mid-Dec, free, about 1h45m away), Antelope Valley Poppy Reserve (bloom Mar to May, peak mid-April, 2027 dates not announced), Joshua Tree Night Sky Festival (2027 not announced). No 2027 fee-free park days or America the Beautiful price found.",
 "Small-venue gaps: Resident, Satellite, Hotel Cafe, Echo, Roxy, Baked Potato, Groundlings, UCB and Netflix Is A Joke Fest 2027 had no dates found. Pappy and Harriet's in Pioneertown has shows (Swervedriver Dec 10, Buck Meek Dec 11) but is in the high desert, about 2.5 hours away.",
 "Big touring acts with no LA or OC 2027 date found yet: Iron Maiden (closest is San Bernardino Apr 24), Guns N' Roses, Billie Eilish, Dua Lipa, Green Day, Red Hot Chili Peppers, Deftones, Kendrick Lamar, Linkin Park, Pearl Jam, Tool. The venue calendars for the Forum, Honda Center and Crypto.com Arena could not be opened.",
