@@ -81,6 +81,9 @@ footer a{color:var(--accent)}
 .side-col .alert{margin:10px 0 0;font-size:13px}
 @media (max-width:820px){.layout{grid-template-columns:minmax(0,1fr)}.side-col{position:static;order:-1}}
 
+:root{--c-motorsport:#c0262d;--c-festival:#a8590f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--c-motorsport:#ff7b82;--c-festival:#f0b062}}
+:root[data-theme="dark"]{--c-motorsport:#ff7b82;--c-festival:#f0b062}
 header a.back{color:var(--accent);font-weight:600;text-decoration:none;font-size:14px}
 </style>
 </head>
@@ -89,7 +92,7 @@ header a.back{color:var(--accent);font-weight:600;text-decoration:none;font-size
 <header>
   <p style="margin:0 0 8px"><a class="back" href="index.html">&larr; Back to the LA and OC calendar</a></p>
   <h1>Worth a Flight</h1>
-  <p>Nov 15, 2026 to Dec 2027. Weekend-trip events outside LA, from team, venue and organizer pages where they could be read and from news or listing sites where they could not. Confidence is marked on every row. Costs marked est. are estimates, not sourced prices. Anything not yet announced is under Watch for.</p>
+  <p>Nov 15, 2026 to Dec 2027. Bucket-list and weekend-trip events outside LA, from sports and festivals to big tours, from team, venue and organizer pages where they could be read and from news or listing sites where they could not. Confidence is marked on every row. Costs marked est. are estimates, not sourced prices. Anything not yet announced is under Watch for.</p>
 </header>
 
 <div class="bar">
@@ -114,7 +117,7 @@ header a.back{color:var(--accent);font-weight:600;text-decoration:none;font-size
 </footer>
 </div>
 
-<script src="fly-data.js?v=2"></script>
+<script src="fly-data.js?v=3"></script>
 <script>
 var MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
 var cat="all";
