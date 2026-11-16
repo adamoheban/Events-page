@@ -341,6 +341,43 @@ var E=[
 ["2026-12-20", "Dec 20", "Holiday tea", "Julienne Fine Foods, San Marino", "$96", "food", "ok", "Booking via Tock.", "https://www.exploretock.com/julienne-fine-foods-and-celebrations"]
 ,
 ["2027-06-06", "Jun 6", "A Perfect Circle (Puscifer opens, The Cult on later dates)", "Hollywood Bowl, Los Angeles", "", "music", "w", "Maynard James Keenan's band, 2027 North American tour. Tickets went on sale Oct 2, 2026. Check the Bowl for the exact show.", "https://www.loudersound.com/bands-artists/a-perfect-circle-north-american-tour-2027-new-single-to-whom-it-may-concern"]
+,
+["2026-11-16", "Nov 16", "Christmas at The Grove tree lighting (25th year)", "The Grove, Los Angeles", "Free", "holiday", "ok", "Limited space.", "https://resident.com/los-angeles/2026/11/03/las-holiday-season-begins-with-these-15-things-to-do-in-november-2026"],
+["2026-11-18", "Nov 18", "Swiss Winter Village (to Jan 3)", "Santa Monica Pier", "", "holiday", "ok", "Runs through Jan 3.", "https://resident.com/los-angeles/2026/11/03/las-holiday-season-begins-with-these-15-things-to-do-in-november-2026"],
+["2026-11-21", "Nov 21", "Holidays at Universal Studios Hollywood (to Jan 3)", "Universal City", "With admission", "holiday", "ok", "", "https://resident.com/los-angeles/2026/11/03/las-holiday-season-begins-with-these-15-things-to-do-in-november-2026"],
+["2026-11-27", "Nov 27", "LA Kings Holiday Ice Festival (to Jan 3)", "Peacock Place, L.A. Live", "", "holiday", "ok", "", "https://resident.com/los-angeles/2026/11/03/las-holiday-season-begins-with-these-15-things-to-do-in-november-2026"],
+["2027-05-06", "May 6", "LA County Fair (to late May)", "Fairplex, Pomona", "", "holiday", "l", "End date conflicts on the listing.", "https://www.showsbee.com/fairs/102267-Los-Angeles-County-Fair-2027.html"],
+["2027-05-15", "May 15", "Long Beach Pride parade and festival (May 15-16)", "Ocean Blvd and Marina Green, Long Beach", "", "holiday", "l", "", "https://outxout.com/event/long-beach-pride-2027"],
+["2027-07-02", "Jul 2", "Anime Expo 2027", "LA Convention Center", "", "talks", "l", "Planned start date.", "https://www.cantonfair.net/updated-information/anime-expo-2027-july-los-angeles-is-planned-for-2027-07-02"],
+["2026-12-12", "Dec 12", "Dark & Roasty Beer Fest, 2 PM", "Long Beach Beer Lab Backlot, Long Beach", "", "food", "l", "Listing only.", "https://overlookmaps.com/events/dark-and-roasty-beer-fest-117768061486896"],
+["2026-11-19", "Nov 19", "Whiskey & Wagyu Friendsgiving", "Maison Kasai at LEVEL 8, Los Angeles", "$89 / $145", "food", "ok", "Two menu tiers.", "https://www.eventbrite.com/e/2003954281200"],
+["2027-04-24", "Apr 24", "Harry Styles, Together, Together Tour", "Rose Bowl, Pasadena", "", "music", "ok", "Second night.", "https://blog.ticketmaster.com/harry-styles-2027-tour-dates/"],
+["2027-04-24", "Apr 24", "Savannah Bananas at UNIQLO Field", "Dodger Stadium, Los Angeles", "", "baseball", "ok", "Second day.", "https://www.mlb.com/dodgers/news/savannah-bananas-to-make-their-uniqlo-field-at-dodger-stadium-debut-from-april-23-24-2027"],
+["2027-03-11", "Mar 11", "Haywire", "Hollywood Palladium, Los Angeles", "", "music", "l", "", "https://www.ticketsmarter.com/e/haywire-tickets-los-angeles-3-11-2027-hollywood-palladium/3529854"],
+["2027-03-20", "Mar 20", "The Plot In You", "Hollywood Palladium, Los Angeles", "", "music", "l", "", "https://www.ticketsmarter.com/e/the-plot-in-you-tickets-los-angeles-3-20-2027-hollywood-palladium/3530837"],
+["2027-04-04", "Apr 4", "Nothing But Thieves", "Hollywood Palladium, Los Angeles", "", "music", "l", "", "https://www.eventworld.com/nothing-but-thieves-hollywood-tickets-04-04-2027/event/403392"],
+["2027-05-01", "May 1", "Def Leppard and Goo Goo Dolls (with The Struts)", "Hollywood Bowl, Los Angeles", "", "music", "ok", "", "https://www.hollywoodbowl.com/events/def-leppard-goo-goo-dolls"],
+["2027-06-06", "Jun 6", "System of a Down (with Pierce the Veil)", "Rose Bowl, Pasadena", "", "music", "ok", "Four Rose Bowl shows: Jun 5, 6, 10, 12.", "https://blabbermouth.net/news/system-of-a-down-announces-fourth-and-final-rose-bowl-concert-for-june-2027"],
+["2027-06-10", "Jun 10", "System of a Down (with Gojira)", "Rose Bowl, Pasadena", "", "music", "ok", "Four Rose Bowl shows: Jun 5, 6, 10, 12.", "https://blabbermouth.net/news/system-of-a-down-announces-fourth-and-final-rose-bowl-concert-for-june-2027"],
+["2027-06-12", "Jun 12", "System of a Down (with Gojira)", "Rose Bowl, Pasadena", "", "music", "ok", "Four Rose Bowl shows: Jun 5, 6, 10, 12.", "https://blabbermouth.net/news/system-of-a-down-announces-fourth-and-final-rose-bowl-concert-for-june-2027"],
+["2027-08-21", "Aug 21", "Fall Out Boy, Twilight of the Punks", "Dodger Stadium, Los Angeles", "", "music", "ok", "", "https://www.ticketnews.com/2026/11/fall-out-boy-announces-36-date-twilight-of-the-punks-world-tour-for-2027/"],
+["2027-09-09", "Sep 9", "Sienna Spiro", "Greek Theatre, Los Angeles", "", "music", "l", "Also Sep 10.", "https://www.rateyourseats.com/tickets/events/sienna-spiro-tickets-los-angeles-greek-theatre-los-angeles-september-9-2027-7726832"],
+["2026-11-16", "Nov 16", "A Benefit for CORE and The Sweet Stuff Foundation (Beck, Norah Jones, Queens of the Stone Age, Weird Al, Jack Black, Bill Burr listed)", "The Wiltern, Los Angeles", "", "music", "l", "Songkick listing. Verify the lineup and tickets.", "https://www.songkick.com/festivals/3809823-a-benefit-for-core-and-the-sweet-stuff-foundation/id/43466994-a-benefit-for-core-and-the-sweet-stuff-foundation-2026"],
+["2026-11-18", "Nov 18", "Manic Street Preachers", "The Belasco, Los Angeles", "", "music", "ok", "", "https://www.songkick.com/concerts/43241942-manic-street-preachers-at-belasco"],
+["2026-11-18", "Nov 18", "Gwar", "House of Blues Anaheim", "", "music", "l", "", "https://www.songkick.com/concerts/43163238-gwar-at-house-of-blues-anaheim"],
+["2026-11-19", "Nov 19", "Jim Norton", "Brea Improv", "from $45", "stage", "ok", "", "https://theater.guide/event/jim-norton-brea-thursday-november-19-2026-800-pm/?pid=5826"],
+["2026-11-20", "Nov 20", "Houndmouth", "The Wiltern, Los Angeles", "", "music", "l", "", "https://www.songkick.com/concerts/43328157-houndmouth-at-wiltern"],
+["2026-11-22", "Nov 22", "Alter Bridge (with Big Wreck)", "House of Blues Anaheim", "", "music", "l", "", "https://www.songkick.com/concerts/43236038-alter-bridge-at-house-of-blues-anaheim"],
+["2026-11-25", "Nov 25", "Zainab Johnson", "Brea Improv", "from $45", "stage", "ok", "", "https://theater.guide/event/zainab-johnson-brea-improv-comedy-club-brea-wednesday-november-25-2026-8-00-pm/?pid=4961"],
+["2026-12-05", "Dec 5", "Melissa Villasenor", "Brea Improv", "$45-125", "stage", "ok", "", "https://theater.guide/event/melissa-villasenor-brea-improv-comedy-club-brea-saturday-december-5-2026-7-00-pm/?pid=7735"],
+["2026-12-08", "Dec 8", "Dave Attell", "The Comedy Store, West Hollywood", "from $163", "stage", "ok", "", "https://theater.guide/event/dave-attell-west-hollywood-the-main-room-at-the-comedy-store-tuesday-december-8-2026-8-00-pm/?pid=6382"],
+["2026-12-11", "Dec 11", "Marlon Wayans", "Brea Improv", "from $81", "stage", "ok", "Also Dec 12 and 13.", "https://theater.guide/event/marlon-wayans-brea-friday-december-11-2026-730-pm/?pid=5455"],
+["2026-12-12", "Dec 12", "Marlon Wayans", "Brea Improv", "from $81", "stage", "ok", "Second show.", "https://theater.guide/event/marlon-wayans-brea-friday-december-11-2026-730-pm/?pid=5455"],
+["2026-12-13", "Dec 13", "Marlon Wayans", "Brea Improv", "from $81", "stage", "ok", "Third show.", "https://theater.guide/event/marlon-wayans-brea-friday-december-11-2026-730-pm/?pid=5455"],
+["2026-12-16", "Dec 16", "Demetri Martin", "The Comedy Store, West Hollywood", "from $47", "stage", "ok", "", "https://theater.guide/event/demetri-martin-west-hollywood-the-main-room-at-the-comedy-store-wednesday-december-16-2026-7-30-pm/?pid=6285"],
+["2027-02-25", "Feb 25", "Big Jay Oakerson", "The Comedy Store, West Hollywood", "from $49", "stage", "ok", "", "https://theater.guide/event/big-jay-oakerson-west-hollywood-the-main-room-at-the-comedy-store-thursday-february-25-2027-8-00-pm/?pid=4939"],
+["2027-03-11", "Mar 11", "The Who's Tommy (tour)", "Segerstrom Hall, Costa Mesa", "", "stage", "l", "", "https://www.etickets.com/theater/musical-play/the-whos-tommy-costa-mesa-ca-03-11-2027/7753670/t"],
+["2027-06-25", "Jun 25", "Maybe Happy Ending", "Segerstrom Hall, Costa Mesa", "", "stage", "l", "", "https://www.ticketsmarter.com/e/maybe-happy-ending-tickets-costa-mesa-6-25-2027-segerstrom-center-for-the-arts-segerstrom-hall/3341211"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -357,6 +394,8 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"Undated leads from the Nov 15 ticketing sweep: OC Brew Ho Ho Dana Point (December), Beachwood Pizza & Beer anniversary Huntington Beach (mid-December usually), Long Beach Homebrew Fest, LA Beer Week 2027, Harry Styles possible extra Rose Bowl nights Apr 30 and May 1, Hollywood Bowl 2027: Roots Picnic Jun 25, B-52s Jul 2-4, Legend of Zelda 40th concert Aug 25.",
+"More leads: Taylor Tomlinson and Jimmy O. Yang 2027 tours (LA dates unchecked), Vir Das Mar 4, Largo shows Jan 16, Jan 22-24 (How Did This Get Made) and Feb 10, Netflix Is A Joke Fest 2027, OC Fair, LA Times Festival of Books, Renaissance Faire Irwindale, Santa Barbara Fiesta, Warped Tour Long Beach, NYE and Valentine's dinners (Culina, Corteza, Le\u00f1a, VIEW, Manuela, Four Seasons).",
 "Tool (the band): no LA-area dates announced as of Nov 15, 2026 (SeatGeek shows none). Watch for a 2027 announcement.",
 "Instagram/Facebook agent pass (Nov 15): Facebook pages are unreadable in Chrome and Instagram only yields text post by post, so almost nothing dated came back. Leads: Bruery x Guelaguetza supper club, Bruery tour, Seis Omakase collab series, Beachwood 2027 Club page.",
 "Sold out, not listed: Julienne wine classes Dec 3 and Dec 9, BOTTAIA Temecula Christmas Vacation movie night Dec 3.",
