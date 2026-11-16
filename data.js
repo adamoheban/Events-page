@@ -304,6 +304,29 @@ var E=[
 ["2026-11-21", "Nov 21, 10am to 6pm", "Huntington Holiday Market", "The Huntington, San Marino", "Free, capacity limited", "markets", "ok", "Tickets via the event page.", "https://www.huntington.org/event/huntington-holiday-market"],
 ["2026-12-13", "Dec 13, 11am to 5pm", "USC Pacific Asia Museum Free 2nd Sunday", "46 N Los Robles Ave, Pasadena", "Free", "museum", "ok", "", "https://www.coloradoboulevard.net/events/free-2nd-sunday-usc-pacific-asia-museum-2026-12-13"],
 ["2027-02-13", "Feb 13, 2pm and 8pm", "Pasadena Symphony Classics: Rachmaninoff Piano Concerto No. 2, Firebird", "Ambassador Auditorium, Pasadena", "Subscriptions from $129", "music", "ok", "Later: Mar 20 (Four Seasons) and May 1 (Shostakovich 5). The venue's future is reported uncertain.", "https://pasadenasymphony-pops.org/symphony-series-2026-27/"]
+,
+["2026-12-02", "Dec 2", "Hilary Hahn (UCSB Arts and Lectures)", "Santa Barbara", "", "music", "l", "Date from a preview article; venue not stated.", "https://www.independent.com/2026/09/16/fall-arts-preview-driven-by-purpose-ucsb-arts-lectures-has-a-new-vision-at-the-helm/"],
+["2026-12-04", "Dec 4 to 5", "Solvang Julefest tree lighting and parade (festival Nov 27 to Jan 3)", "Solvang", "", "holiday", "ok", "Light and Music Show nightly 5 to 9pm. End date varies by source.", "https://www.independent.com/events/solvang-julefest-2026-22/"],
+["2026-12-07", "Dec 7, 5 to 8pm", "Visit Long Beach Christmas Tree Lighting", "Terrace Theater Plaza, Long Beach", "Free", "holiday", "ok", "Free, ticket required. Tickets release Mondays 10am (Nov 16, 23, 30).", "https://visitlongbeach.com/events/annual-events/tree-lighting"],
+["2026-12-09", "Dec 9", "Demetri Martin: Standup Comedy for Christmas", "Lobero Theatre, Santa Barbara", "", "stage", "l", "Ticket listing only.", "https://www.rateyourseats.com/tickets/events/demetri-martin-standup-comedy-for-christmas-tickets-santa-barbara-lobero-theatre-december-9-2026-7565114"],
+["2026-12-12", "Dec 12, 8pm", "David Benoit, A Charlie Brown Christmas tribute", "Carpenter Center, Long Beach", "", "music", "w", "From the venue's season brochure.", "https://carpenterarts.org/tickets"],
+["2026-12-13", "Dec 13, 2pm; fireworks about 7pm", "Santa Barbara Parade of Lights", "Santa Barbara Harbor", "Free", "holiday", "ok", "Winter Wonderland on City Pier 3 to 5pm.", "https://santabarbaraca.com/events/santa-barbara-parade-of-lights/"],
+["2027-01-22", "Jan 22, 8pm", "Ali Siddiq", "Terrace Theater, Long Beach", "", "stage", "l", "Listing only.", "https://www.eventworld.com"],
+["2027-01-24", "Jan 24, 3pm", "Splintered Sunlight, Grateful Dead tribute", "Carpenter Center, Long Beach", "", "music", "w", "Season brochure.", "https://carpenterarts.org/tickets"],
+["2027-01-27", "Jan 27", "Rosanne Cash with John Leventhal", "Santa Barbara", "", "music", "l", "Venue not confirmed.", "https://www.eventworld.com/rosanne-cash-with-john-leventhal-santa-barbara-tickets-01-27-2027/event/468675"],
+["2027-01-30", "Jan 30, 8pm", "An Evening with Adam Kinzinger", "Carpenter Center, Long Beach", "", "talks", "w", "Season brochure.", "https://carpenterarts.org/tickets"],
+["2027-01-31", "Jan 31, 6pm", "Jazz at Lincoln Center: World on a String", "Carpenter Center, Long Beach", "", "music", "w", "Season brochure.", "https://carpenterarts.org/tickets"],
+["2027-02-03", "Feb 3 to 13", "Santa Barbara International Film Festival (42nd)", "Arlington Theatre, Riviera Theater, McHurley", "", "film", "ok", "Passes on sale since August. Lineup announced in January.", "https://www.independent.com/2026/04/14/santa-barbara-international-film-festival-sets-dates-for-2027-edition-42nd-annual-festival-to-run-february-3-13-2027/"],
+["2027-02-06", "Feb 6, 8pm", "Les Ballets Trockadero de Monte Carlo", "Carpenter Center, Long Beach", "", "stage", "w", "Season brochure.", "https://carpenterarts.org/tickets"],
+["2027-02-14", "Feb 14", "Cupid's Flight Love on the Run (5K, 10K, half)", "Shoreline Village, Long Beach", "", "runs", "l", "Listing only.", "https://runsignup.com/Race/CA/LongBeach/CupidsFlightLoveOnTheRunValentineSKKHalfMarathon"],
+["2027-02-19", "Feb 19, 7:30pm", "Opera Santa Barbara: The Barber of Seville (also Feb 21, 24)", "Lobero Theatre, Santa Barbara", "From $35", "stage", "ok", "", "https://www.lobero.org/events/barber-of-seville-osb-26-27/"],
+["2027-02-24", "Feb 24", "Jazz at Lincoln Center with Wynton Marsalis", "Santa Barbara", "", "music", "l", "Venue not stated. UCSB Arts and Lectures.", "https://www.independent.com/2026/09/16/fall-arts-preview-driven-by-purpose-ucsb-arts-lectures-has-a-new-vision-at-the-helm/"],
+["2027-03-05", "Mar 5", "Stanley Clarke and Hiromi", "Santa Barbara", "", "music", "l", "Venue not confirmed.", "https://www.eventworld.com/stanley-clarke-and-hiromi-santa-barbara-tickets-03-05-2027/event/465036"],
+["2027-03-18", "Mar 18, 8pm", "Patti LuPone: Songs from a Hat (benefit)", "Carpenter Center, Long Beach", "", "stage", "w", "Season brochure.", "https://carpenterarts.org/tickets"],
+["2027-03-21", "Mar 21, 3pm", "Live and Let Die (McCartney tribute)", "Carpenter Center, Long Beach", "", "music", "w", "Season brochure.", "https://carpenterarts.org/tickets"],
+["2027-04-03", "Apr 3", "Long Beach Half Marathon", "Long Beach", "", "runs", "l", "Listing only.", "https://running.life"],
+["2027-06-04", "Jun 4", "Stewart Copeland", "Santa Barbara Bowl", "", "music", "ok", "", "https://songkick.com/concerts/43511672-stewart-copeland-at-santa-barbara-bowl"],
+["2027-06-05", "Jun 5, 8am", "Santa Barbara Wine Country Half Marathon", "Solvang area", "", "runs", "w", "", "https://ultrasignup.com/register.aspx?eid=20861"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -320,6 +343,8 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"Brewery leads with no confirmed date yet: The Bruery 2026 Black Tuesday release party and weekly tasting-room trivia (Wed) and bingo (Tue), Three Weavers anniversary fest, Pocock anniversary festival (was early Dec 2025), Beachwood Huntington Beach anniversary (was Dec 13, 2025), Stone Christmas Eve. Most breweries post events only on their own pages or Instagram, so check those.",
+"Not found: Santa Barbara Old Spanish Days and Summer Solstice 2027 dates, Queen Mary holiday and New Year's Eve 2026 dates, Belmont Shore and Naples boat parades 2026, Long Beach Pride 2027, Long Beach Marathon 2027.",
 "Pasadena recurring: Norton Simon free first Fridays 4 to 7pm (Dec 4, Feb 5, Mar 5 and so on), Rose Bowl Flea Market 2nd Sunday ($15), PCC Flea 1st Sunday. Not found for 2027: Pasadena POPS, Santa Anita winter meet, Caltech Watson Lectures, Doo Dah Parade, JPL open house.",
 "Moon phases for dark-sky planning (Pacific time, from USNO): new moons Jan 7 (12:24pm), Feb 6, Mar 8, Apr 6, May 6, Jun 4, Jul 3, Aug 2, Aug 31, Sep 29, Oct 29, Nov 27, Dec 27, 2027. Full moons Jan 22, Feb 20, Mar 22, Apr 20, May 20, Jun 18, Jul 18, Aug 17, Sep 15, Oct 15, Nov 13, Dec 13, 2027. Also: Starship test flights, ISS and Starlink pass times for LA, and Vandenberg launches after 2026 were not found; Heavens-Above and Spot the Station are the tools to check.",
 "Nature windows without exact dates: Goleta Ellwood monarch grove (Oct to Feb, peak mid-Dec, free, about 1h45m away), Antelope Valley Poppy Reserve (bloom Mar to May, peak mid-April, 2027 dates not announced), Joshua Tree Night Sky Festival (2027 not announced). No 2027 fee-free park days or America the Beautiful price found.",
