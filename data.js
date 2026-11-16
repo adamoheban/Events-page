@@ -339,6 +339,8 @@ var E=[
 ["2026-12-13", "Dec 13", "Holiday tea", "Julienne Fine Foods, San Marino", "$96", "food", "ok", "Booking via Tock.", "https://www.exploretock.com/julienne-fine-foods-and-celebrations"],
 ["2026-12-17", "Dec 17", "Holiday dinner", "Julienne Fine Foods, San Marino", "$108", "food", "ok", "Booking via Tock.", "https://www.exploretock.com/julienne-fine-foods-and-celebrations"],
 ["2026-12-20", "Dec 20", "Holiday tea", "Julienne Fine Foods, San Marino", "$96", "food", "ok", "Booking via Tock.", "https://www.exploretock.com/julienne-fine-foods-and-celebrations"]
+,
+["2027-06-06", "Jun 6", "A Perfect Circle (Puscifer opens, The Cult on later dates)", "Hollywood Bowl, Los Angeles", "", "music", "w", "Maynard James Keenan's band, 2027 North American tour. Tickets went on sale Oct 2, 2026. Check the Bowl for the exact show.", "https://www.loudersound.com/bands-artists/a-perfect-circle-north-american-tour-2027-new-single-to-whom-it-may-concern"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -355,6 +357,7 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"Tool (the band): no LA-area dates announced as of Nov 15, 2026 (SeatGeek shows none). Watch for a 2027 announcement.",
 "Instagram/Facebook agent pass (Nov 15): Facebook pages are unreadable in Chrome and Instagram only yields text post by post, so almost nothing dated came back. Leads: Bruery x Guelaguetza supper club, Bruery tour, Seis Omakase collab series, Beachwood 2027 Club page.",
 "Sold out, not listed: Julienne wine classes Dec 3 and Dec 9, BOTTAIA Temecula Christmas Vacation movie night Dec 3.",
 "Restaurant leads to confirm: Noma LA pop-up (about $1,500 per diner, Tock page exploretock.com/noma-la), Bello in Newport Beach Tock events, Chefsgiving at Pendry Newport Beach, Rafu Market omakase holiday dinner. Not found for the window: guest sushi chefs and omakase pop-ups, Smorgasburg LA 2027, Nisei Week 2027, Taste of OC, Valentine's and New Year's Eve 2026 prix fixe menus. A lot of sushi and chef collab news is posted on Instagram, which I couldn't search.",
