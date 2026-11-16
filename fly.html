@@ -6,7 +6,7 @@
 <title>Worth a Flight</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
 <style>
-
+/* Layout: sticky filter bar over a month-by-month agenda; each row is date | event | where/price | confidence */
 :root{
   --bg:#f6f7f9; --surface:#ffffff; --fg:#14181f; --muted:#5a6472; --line:#dfe3e9;
   --accent:#0b5cad; --accent-soft:#e4eefa;
@@ -25,43 +25,130 @@
   --c-baseball:#6aa9ee; --c-sports:#f0a05e; --c-music:#d98ad4; --c-film:#f08a9b; --c-food:#5fd09a; --c-markets:#d8c55e; --c-holiday:#6fc7dc;
   --ok:#5fd09a; --warn:#e5b04d; --low:#7f8896; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--font-body);margin:0;padding-block:24px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--font-body);padding-block:0 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .wrap{max-width:980px;margin:0 auto}
-h1{font:700 clamp(24px,5vw,34px)/1.1 var(--font-display);margin:6px 0 6px;text-wrap:balance}
-a.back{color:var(--accent);font-weight:600;text-decoration:none;font-size:14px}
-p.meta{margin:0;color:var(--muted);max-width:68ch}
-.week{margin:18px 0 6px}
-.week h2{font:700 20px var(--font-display);margin:0 0 4px}
-.wk{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:10px}
-.wk .day{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;min-width:0}
-.wk .day.today{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
-.wk .day h3{font:600 13px var(--font-body);margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.wk .ev{font-size:13px;line-height:1.35;margin:0 0 7px;padding-left:8px;border-left:3px solid var(--cc,var(--accent));overflow-wrap:anywhere}
-.wk .ev a{color:var(--fg);text-decoration:none;font-weight:500}
-.wk .ev a:hover{text-decoration:underline}
-.wk .ev small{display:block;color:var(--muted)}
-.wk .none{color:var(--muted);font-size:13px;margin:0}
+header{padding-block:28px 12px}
+h1{font:700 clamp(26px,5vw,38px)/1.1 var(--font-display);margin:0 0 8px;text-wrap:balance}
+header p{margin:0;color:var(--muted);max-width:68ch}
+.alert{margin:16px 0 0;padding:12px 14px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:6px;font-size:14px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 13px var(--font-body);border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:6px 11px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip:focus-visible,.sw:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tools{display:flex;gap:10px;margin-top:8px;flex-wrap:wrap;align-items:center}
+.tools input[type=search]{flex:1;min-width:180px;font:14px var(--font-body);padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--fg)}
+.tools label{font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center}
+.count{font-size:13px;color:var(--muted);margin-left:auto}
+h2.m{font:700 18px var(--font-display);margin:28px 0 8px;display:flex;align-items:baseline;gap:10px}
+h2.m small{font:400 13px var(--font-body);color:var(--muted)}
+.row{display:grid;grid-template-columns:96px 1fr;gap:4px 14px;padding:12px 0;border-top:1px solid var(--line)}
+.d{font:600 13px var(--font-display);color:var(--muted);padding-top:2px}
+.d b{display:block;color:var(--fg);font-size:15px}
+.t{min-width:0}
+.t h3{margin:0;font:600 15px/1.35 var(--font-body)}
+.t h3 a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.t h3 a:hover{text-decoration-color:var(--accent)}
+.meta{color:var(--muted);font-size:13.5px;margin-top:2px}
+.tag{display:inline-block;font:600 11px var(--font-body);letter-spacing:.05em;text-transform:uppercase;margin-right:8px;color:var(--cc)}
+.conf{font-size:12px;margin-top:4px;color:var(--low)}
+.conf.ok{color:var(--ok)}.conf.warn{color:var(--warn)}
+.note{font-size:13.5px;margin-top:4px}
+section.rec{margin-top:36px}
+section.rec h2{font:700 20px var(--font-display);margin:0 0 4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0}
+.card h3{margin:0 0 2px;font:600 15px var(--font-body)}
+.card p{margin:2px 0;font-size:13.5px;color:var(--muted)}
+.card .nx{color:var(--fg)}
+.watch li{margin:4px 0}
+footer{margin-top:36px;font-size:13px;color:var(--muted)}
+footer a{color:var(--accent)}
+@media (max-width:520px){.row{grid-template-columns:1fr}.d b{display:inline;margin-right:6px}}
+:root{--c-talks:#5b3fb0;--c-stage:#b0328a;--c-museum:#4a6a1f;--c-outdoor:#0a7a6a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--c-talks:#a58df0;--c-stage:#ee86cf;--c-museum:#a5cf6a;--c-outdoor:#5ad6c0}}
+:root[data-theme="dark"]{--c-talks:#a58df0;--c-stage:#ee86cf;--c-museum:#a5cf6a;--c-outdoor:#5ad6c0}
+:root{--c-astro:#2f5fd0;--c-wrestling:#c2410c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--c-astro:#8fa8ff;--c-wrestling:#ff9a62}}
+:root[data-theme="dark"]{--c-astro:#8fa8ff;--c-wrestling:#ff9a62}
+:root{--c-runs:#b8860b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--c-runs:#f0c552}}
+:root[data-theme="dark"]{--c-runs:#f0c552}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:24px;align-items:start}
+.side-col{position:sticky;top:96px;font-size:13px}
+.side-col summary{font:600 12px var(--font-body);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);cursor:pointer;padding:12px 0 0}
+.side-col .alert{margin:10px 0 0;font-size:13px}
+@media (max-width:820px){.layout{grid-template-columns:minmax(0,1fr)}.side-col{position:static;order:-1}}
 
-h2{font:700 20px var(--font-display);margin:28px 0 10px}
-.card{display:grid;grid-template-columns:120px 1fr;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:0 0 10px}
-.card .when{font:600 13px var(--font-body);color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
-.card h3{font:600 16px var(--font-display);margin:0 0 2px}
-.card h3 a{color:var(--fg);text-decoration:none}
-.card h3 a:hover{text-decoration:underline}
-.card p{margin:2px 0;font-size:14px}
-.card .where{color:var(--muted)}
-.card .det{color:var(--muted);font-size:13px}
-.card .chip{display:block;margin-top:4px;font:500 11px var(--font-body);color:var(--muted);text-transform:none;letter-spacing:0}
-.card .urg{color:var(--warn);font-size:13px;font-weight:500}
-@media(max-width:560px){.card{grid-template-columns:1fr;gap:4px}}
+header a.back{color:var(--accent);font-weight:600;text-decoration:none;font-size:14px}
 </style>
 </head>
 <body>
 <div class="wrap">
-<a class="back" href="index.html">&larr; Back to the calendar</a>
-<h1>Worth a flight</h1>
-<p class="meta">A short, selective list of weekend trips, built from your interests: eclipses, wrestling's biggest shows, baseball pilgrimages, cigars and a few top-tier events. Costs marked estimated are unverified. Dates and on-sale details come from news and venue listings as of Nov 15, 2026.</p>
-<h2>November 2026</h2><article class="card"><div class="when">Nov 18, 2026<span class="chip">Deadline</span></div><div class="body"><h3><a href="https://www.wwe.com/article/glendale-to-host-40th-annual-royal-rumble-on-saturday-feb-6-at-state-farm-stadium" target="_blank" rel="noopener">Royal Rumble general on-sale</a></h3><p class="where">Online</p><p>See above.</p><p class="urg">Noon ET</p></div></article><article class="card"><div class="when">Nov 28, 2026<span class="chip">Option</span></div><div class="body"><h3><a href="https://www.wwe.com/article/houston-to-host-survivor-series-2026" target="_blank" rel="noopener">WWE Survivor Series: WarGames</a></h3><p class="where">Daikin Park, Houston</p><p>WarGames in a baseball park, Thanksgiving weekend.</p><p class="det">About $60 to $200 (estimated)</p><p class="urg">13 days out, so expect resale or last-minute inventory.</p></div></article><h2>December 2026</h2><article class="card"><div class="when">Dec 13-14, 2026<span class="chip">Deadline</span></div><div class="body"><h3><a href="https://www.farmersalmanac.com/the-december-geminids-19860" target="_blank" rel="noopener">Geminids meteor shower peak</a></h3><p class="where">Any dark-sky site</p><p>A thin moon sets around 9 pm, so conditions are close to ideal for a cheap weekend add-on.</p><p class="det">Free</p><p class="urg">No booking.</p></div></article><article class="card"><div class="when">Dec 2026 to Feb 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://www.nps.gov/zion/learn/news/2026-02-11-angels-landing.htm" target="_blank" rel="noopener">Angels Landing winter season</a></h3><p class="where">Zion National Park, UT</p><p>Exposed ridge hike with chains, with a permit chase like Half Dome.</p><p class="urg">Day-before lottery runs 12:01 am to 3 pm MT. The seasonal lottery closed Oct 20.</p></div></article><h2>January 2027</h2><article class="card"><div class="when">Jan 4, 2027<span class="chip">Top pick</span></div><div class="body"><h3><a href="https://www.fightful.com/wrestling-news/njpw-announces-wrestle-kingdom-2027-2028-dates-airs-ai-video-message-from-antonio-inoki/" target="_blank" rel="noopener">NJPW Wrestle Kingdom 21</a></h3><p class="where">Tokyo Dome, Tokyo</p><p>The biggest pro wrestling show of the year, in the Tokyo Dome.</p><p class="det">About $70 to $140 (estimated)</p><p class="urg">On-sale date not found. Last year&#x27;s show sold out in days.</p></div></article><article class="card"><div class="when">Jan 14, 2027<span class="chip">Strong</span></div><div class="body"><h3><a href="https://www.ticketnews.com/2026/07/john-mulaney-takes-manhattan-tour-2027/" target="_blank" rel="noopener">John Mulaney at Radio City</a></h3><p class="where">New York</p><p>Stand-up in a 6,000-seat room.</p><p class="det">Not published</p><p class="urg">Presale through Mulaney&#x27;s site; part of a Jan 7-15 run across 9 venues.</p></div></article><article class="card"><div class="when">Jan 15-23, 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://news3lv.com/news/entertainment/eagles-sphere-las-vegas-shows-january-2027-classic-rock-music-concert-entertainment" target="_blank" rel="noopener">Eagles at Sphere</a></h3><p class="where">Las Vegas</p><p>A Sphere production of a classic-rock catalog.</p><p class="det">Jan 15, 16, 22, 23 · From $175 all-in</p><p class="urg">On sale since Aug 14. Sell-out status not stated.</p></div></article><article class="card"><div class="when">Jan 28-30, 2027<span class="chip">Strong</span></div><div class="body"><h3><a href="https://www.jambase.com/article/metallica-tour-dates-las-vegas-sphere-2026-2027" target="_blank" rel="noopener">Metallica at Sphere</a></h3><p class="where">Las Vegas</p><p>Metallica in the Sphere&#x27;s full-dome format, one short flight away.</p><p class="det">Check resale</p><p class="urg">Probably sold out. Presale opened in March 2026.</p></div></article><h2>February 2027</h2><article class="card"><div class="when">Feb 1 to Mar 1, 2027<span class="chip">Deadline</span></div><div class="body"><h3><a href="https://www.shedreamsofalpine.com/blog/permit-deadlines-and-reservations-for-popular-california-hiking-trails-and-campsites" target="_blank" rel="noopener">Mount Whitney permit lottery (approximate)</a></h3><p class="where">Eastern Sierra, CA</p><p>Highest summit in the lower 48, a drive from LA.</p><p class="det">$6 per application</p><p class="urg">2027 dates not posted yet. Based on the 2026 pattern.</p></div></article><article class="card"><div class="when">Feb 6, 2027<span class="chip">Top pick</span></div><div class="body"><h3><a href="https://www.wwe.com/article/glendale-to-host-40th-annual-royal-rumble-on-saturday-feb-6-at-state-farm-stadium" target="_blank" rel="noopener">WWE Royal Rumble (40th)</a></h3><p class="where">State Farm Stadium, Glendale, AZ</p><p>A short flight from LA, in a 73,000-seat stadium, and the winner gets a WrestleMania 43 title shot.</p><p class="det">About $100 to $300 (estimated)</p><p class="urg">Presale Nov 16 and 17, general on-sale Nov 18 at noon ET via SeatGeek.</p></div></article><article class="card"><div class="when">Feb 7-10, 2027<span class="chip">Strong</span></div><div class="body"><h3><a href="https://www.postwrestling.com/?p=140254" target="_blank" rel="noopener">AEW Dynasty and London Dynamite</a></h3><p class="where">Liverpool and London</p><p>AEW&#x27;s first UK trip since Wembley, with a pay-per-view and a TV show in one trip.</p><p class="det">About £40 to £90 (estimated)</p><p class="urg">On-sale not found.</p></div></article><article class="card"><div class="when">Feb 16-19, 2027<span class="chip">Top pick</span></div><div class="body"><h3><a href="https://www.cigaraficionado.com/article/registration-opens-for-2027-procigar-festival-in-dominican-republic" target="_blank" rel="noopener">ProCigar Festival (19th)</a></h3><p class="where">Santiago, Dominican Republic</p><p>The cigar world&#x27;s biggest festival, in the heart of Dominican cigar country.</p><p class="det">Not published</p><p class="urg">Registration is open now.</p></div></article><h2>March 2027</h2><article class="card"><div class="when">Mar 1-31, 2027<span class="chip">Deadline</span></div><div class="body"><h3><a href="https://www.nps.gov/yose/planyourvisit/hdpermits.htm" target="_blank" rel="noopener">Half Dome preseason lottery (approximate)</a></h3><p class="where">Yosemite, CA</p><p>Your top goal.</p><p class="det">$10 per application, $10 per person if drawn</p><p class="urg">2027 dates not posted yet. Results mid-April. A daily lottery also runs two days before each hike.</p></div></article><article class="card"><div class="when">Mar 3-7, 2027<span class="chip">Strong</span></div><div class="body"><h3><a href="https://thelocalpalate.com/events/charleston-wine-food-2027/" target="_blank" rel="noopener">Charleston Wine + Food Festival</a></h3><p class="where">Charleston, SC</p><p>A top Southern food and wine festival.</p><p class="det">Signature dinners about $95 to $350 (2026 pricing)</p><p class="urg">Tickets probably on sale since October. Verify.</p></div></article><article class="card"><div class="when">Mar 5-8, 2027<span class="chip">Strong</span></div><div class="body"><h3><a href="https://tobaccoreporter.com/?p=168481" target="_blank" rel="noopener">PCA27 cigar trade show</a></h3><p class="where">Las Vegas</p><p>The industry&#x27;s main annual show, with new releases and producer access.</p><p class="det">Trade show</p><p class="urg">Public access not confirmed.</p></div></article><h2>April 2027</h2><article class="card"><div class="when">Apr 8-18, 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://www.fox5vegas.com/2026/09/28/john-mayer-announces-six-shows-sphere-april-2027/" target="_blank" rel="noopener">John Mayer at Sphere</a></h3><p class="where">Las Vegas</p><p>Guitar-driven residency.</p><p class="det">Apr 8, 10, 11, 15, 17, 18 · From $129</p><p class="urg">General on-sale opened Oct 9.</p></div></article><h2>May 2027</h2><article class="card"><div class="when">May 6-9, 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://live-metal.com/2026/06/17/welcome-to-rockville-sets-2027-dates-in-daytona-beach-florida/" target="_blank" rel="noopener">Welcome to Rockville (16th)</a></h3><p class="where">Daytona Beach, FL</p><p>Four-day rock and metal festival.</p><p class="det">4-day GA $370, VIP $755</p><p class="urg">Passes on sale since Jun 22. Lineup not yet announced.</p></div></article><h2>June 2027</h2><article class="card"><div class="when">Jun 9-13, 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://www.timeout.com/uk/news/download-festival-2027-early-bird-tickets-prices-dates-headliner-rumours-061526" target="_blank" rel="noopener">Download Festival</a></h3><p class="where">Derby, UK</p><p>The UK&#x27;s flagship rock and metal festival. Headliners not announced.</p><p class="det">Festival weekend Jun 11-13 · Early-bird camping from £330 (5 nights)</p><p class="urg">Early bird for a limited time. 2026 sold out fastest.</p></div></article><h2>July 2027</h2><article class="card"><div class="when">Jul 12-13, 2027<span class="chip">Top pick</span></div><div class="body"><h3><a href="https://www.espn.com/mlb/story/_/id/45880323/wrigley-field-cubs-host-2027-all-star-game" target="_blank" rel="noopener">MLB Home Run Derby and All-Star Game</a></h3><p class="where">Wrigley Field, Chicago</p><p>The first All-Star Game at Wrigley since 1990.</p><p class="det">$300 and up (estimated)</p><p class="urg">On-sale not found. Expect a fast sell-out.</p></div></article><article class="card"><div class="when">Jul 28-31, 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://www.loudersound.com/news/wacken-2027-lineup-five-finger-death-punch-helloween-electric-callboy-announced" target="_blank" rel="noopener">Wacken Open Air</a></h3><p class="where">Wacken, Germany</p><p>The world&#x27;s largest metal festival.</p><p class="det">First wave: Five Finger Death Punch, Helloween, Electric Callboy · Not published</p><p class="urg">Sale open since Aug 3.</p></div></article><h2>August 2027</h2><article class="card"><div class="when">Aug 2, 2027<span class="chip">Top pick</span></div><div class="body"><h3><a href="https://www.space.com/16-best-places-to-see-2027-total-solar-eclipse" target="_blank" rel="noopener">Total solar eclipse at Luxor, Egypt</a></h3><p class="where">Luxor, Egypt</p><p>The longest, clearest totality on the path. This is the one to plan around.</p><p class="det">6 min 20 s of totality, under 1% cloud chance · Group packages only; no public prices</p><p class="urg">Critical: Egyptian tours are reported selling out. Check against your August Egypt dates.</p></div></article><article class="card"><div class="when">Aug 2, 2027<span class="chip">Top pick</span></div><div class="body"><h3><a href="https://www.space.com/16-best-places-to-see-2027-total-solar-eclipse" target="_blank" rel="noopener">Total solar eclipse in southern Spain</a></h3><p class="where">Tarifa (Isla de las Palomas), Spain</p><p>The easier alternative to Egypt, with a real risk of Levanter cloud.</p><p class="det">4 min 39 s of totality, about 14% cloud chance. Gibraltar gives 4 min 26 s but clouds more. · Hotel rates already spiking</p><p class="urg">Critical: book now if this is your option.</p></div></article><article class="card"><div class="when">Aug 6-30, 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://www.chortle.co.uk/news/2026/09/02/61543/edinburgh_fringe_rejects_calls_to_bring_2027_event_earlier" target="_blank" rel="noopener">Edinburgh Festival Fringe</a></h3><p class="where">Edinburgh, Scotland</p><p>The world&#x27;s largest comedy festival.</p><p class="det">Varies by show</p><p class="urg">Not in source.</p></div></article><article class="card"><div class="when">Aug 12, 2027<span class="chip">Top pick</span></div><div class="body"><h3><a href="https://bleacherreport.com/articles/25471063-red-sox-vs-royals-set-2027-mlb-field-dreams-game-scheduled-date-announced" target="_blank" rel="noopener">MLB Field of Dreams Game: Red Sox vs. Royals</a></h3><p class="where">Dyersville, IA</p><p>Baseball on the original movie diamond.</p><p class="det">$150 to $400 (estimated)</p><p class="urg">On-sale not found. The 2022 game sold out quickly.</p></div></article><article class="card"><div class="when">Aug 12-14, 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://www.jambase.com/show/mt-joy-red-rocks-amphitheatre-20270814" target="_blank" rel="noopener">Mt. Joy at Red Rocks</a></h3><p class="where">Morrison, CO</p><p>Indie rock at a top amphitheater.</p><p class="det">Three nights · Not published</p><p class="urg">Sale status not stated.</p></div></article><article class="card"><div class="when">Aug 12-13, 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://www.telescopeadvisor.com/perseid-meteor-shower-2027/" target="_blank" rel="noopener">Perseid meteor shower peak</a></h3><p class="where">Any dark-sky site</p><p>Weak year: the moon is about 80% lit, best after 1 to 2 am.</p><p class="det">Free</p><p class="urg">No booking.</p></div></article><article class="card"><div class="when">Aug 19, 2027<span class="chip">Strong</span></div><div class="body"><h3><a href="https://www.mlb.com/news/press-release-blue-jays-and-chicago-cubs-to-play-in-the-2027-mlb-little-league-classic" target="_blank" rel="noopener">MLB Little League Classic: Blue Jays vs. Cubs</a></h3><p class="where">Williamsport, PA</p><p>An MLB game inside the Little League World Series.</p><p class="det">$100 to $250 (estimated)</p><p class="urg">On-sale not found. Small stadium.</p></div></article><h2>September 2027</h2><article class="card"><div class="when">Sep 16-19, 2027<span class="chip">Strong</span></div><div class="body"><h3><a href="https://www.breakingbourbon.com/bourbon-whiskey-press-releases/the-kentucky-bourbon-festival-announces-2027-dates" target="_blank" rel="noopener">Kentucky Bourbon Festival</a></h3><p class="where">Bardstown, KY</p><p>The original bourbon festival, in the bourbon capital.</p><p class="det">Not announced</p><p class="urg">2027 on-sale TBA. 2026 sold out for the fifth year running.</p></div></article><article class="card"><div class="when">Sep 29 to Oct 30, 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://www.ticketnews.com/2026/11/pink-sphere-las-vegas-residency-2027/" target="_blank" rel="noopener">P!nk at Sphere</a></h3><p class="where">Las Vegas</p><p>Full-scale Sphere production.</p><p class="det">Nine shows · Not published</p><p class="urg">Artist presale Nov 18, general on-sale Nov 20 at 10 am. High urgency.</p></div></article><article class="card"><div class="when">Sep 30 to Oct 3, 2027<span class="chip">Option</span></div><div class="body"><h3><a href="https://themusicuniverse.com/aftershock-2027-dates-announced/" target="_blank" rel="noopener">Aftershock Festival (15th)</a></h3><p class="where">Sacramento, CA</p><p>Rock and metal festival, drivable from LA. Lineup not announced.</p><p class="det">Not published</p><p class="urg">Public on-sale Nov 16 at noon PT. Urgent.</p></div></article><h2>November 2027</h2><article class="card"><div class="when">Nov 21, 2027 (likely)<span class="chip">Watching</span></div><div class="body"><h3><a href="https://www.hospices-de-beaune.com" target="_blank" rel="noopener">Hospices de Beaune wine auction</a></h3><p class="where">Beaune, France</p><p></p><p class="urg">Third Sunday of November pattern. Unpublished.</p></div></article><h2>No date yet</h2><article class="card"><div class="when">TBA<span class="chip">Watching</span></div><div class="body"><h3><a href="https://www.wwe.com" target="_blank" rel="noopener">WWE SummerSlam 2027, AEW All In, Wrestle Dynasty, PWG Battle of Los Angeles</a></h3><p class="where"></p><p>Wrestling events I could not date.</p><p class="urg">Not announced.</p></div></article><article class="card"><div class="when">TBA<span class="chip">Watching</span></div><div class="body"><h3><a href="https://baseballhall.org" target="_blank" rel="noopener">Hall of Fame induction weekend, Cooperstown</a></h3><p class="where">Cooperstown, NY</p><p></p><p class="urg">Not announced.</p></div></article><article class="card"><div class="when">TBA<span class="chip">Watching</span></div><div class="body"><h3><a href="https://www.cigaraficionado.com" target="_blank" rel="noopener">Liga Privada, Drew Estate and Rocky Patel events; Big Smoke</a></h3><p class="where"></p><p></p><p class="urg">Nothing announced.</p></div></article><article class="card"><div class="when">TBA<span class="chip">Watching</span></div><div class="body"><h3><a href="https://www.google.com/search?q=2027+wine+beer+festival+dates" target="_blank" rel="noopener">Napa Auction, GABF, Aspen Food &amp; Wine, Savor, Pliny release, NYC Wine &amp; Food, Pebble Beach Food &amp; Wine</a></h3><p class="where"></p><p></p><p class="urg">Dates not confirmed.</p></div></article><article class="card"><div class="when">Feb 18-21 and Sep 17-19 (expected)<span class="chip">Watching</span></div><div class="body"><h3><a href="https://www.sobewff.org" target="_blank" rel="noopener">South Beach Wine Festival and Music City Food + Wine</a></h3><p class="where">Miami and Nashville</p><p></p><p class="urg">Expected dates, not confirmed.</p></div></article><article class="card"><div class="when">TBA<span class="chip">Watching</span></div><div class="body"><h3><a href="https://www.netflixisajokefest.com" target="_blank" rel="noopener">Just For Laughs, Netflix Is A Joke Fest, SF Sketchfest, Moontower, Aspen Ideas</a></h3><p class="where"></p><p>Bonnaroo is taking 2027 off.</p><p class="urg">No 2027 dates found.</p></div></article><article class="card"><div class="when">TBA<span class="chip">Watching</span></div><div class="body"><h3><a href="https://www.go-astronomy.com" target="_blank" rel="noopener">Bryce Canyon, Great Basin, Texas, Oregon, Golden State star parties and Cherry Springs</a></h3><p class="where"></p><p></p><p class="urg">2026 dates were in June, July and September. 2027 not posted.</p></div></article><article class="card"><div class="when">TBA<span class="chip">Watching</span></div><div class="body"><h3><a href="https://www.nps.gov" target="_blank" rel="noopener">Havasupai and Zion Subway permits</a></h3><p class="where"></p><p></p><p class="urg">No 2027 lottery dates found.</p></div></article>
+<header>
+  <p style="margin:0 0 8px"><a class="back" href="index.html">&larr; Back to the LA and OC calendar</a></p>
+  <h1>Worth a Flight</h1>
+  <p>Nov 15, 2026 to Dec 2027. Weekend-trip events outside LA, from team, venue and organizer pages where they could be read and from news or listing sites where they could not. Confidence is marked on every row. Costs marked est. are estimates, not sourced prices. Anything not yet announced is under Watch for.</p>
+</header>
+
+<div class="bar">
+  <div class="chips" id="chips" role="group" aria-label="Category filter"></div>
+  <div class="tools">
+    <input type="search" id="q" placeholder="Search events, cities" aria-label="Search events">
+    <label><input type="checkbox" id="firm"> Confirmed dates only</label>
+    <span class="count" id="count"></span>
+  </div>
 </div>
+
+<main id="list"></main>
+
+<section class="rec watch">
+  <h2>Watch for</h2>
+  <p class="meta" style="margin:0">Not yet announced, or no date found in a source.</p>
+  <ul id="watch"></ul>
+</section>
+
+<footer>
+  <p>Compiled Nov 15, 2026. Ticket prices, on-sale dates and schedules change; check the event link before buying. Several MLB series stay tentative until the labor deal is settled.</p>
+</footer>
+</div>
+
+<script src="fly-data.js"></script>
+<script>
+var MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+var cat="all";
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function chips(){
+  var h='<button class="chip" aria-pressed="true" data-c="all">All</button>';
+  Object.keys(FCATS).forEach(function(k){h+='<button class="chip" aria-pressed="false" data-c="'+k+'">'+FCATS[k]+'</button>'});
+  var el=document.getElementById("chips");el.innerHTML=h;
+  el.addEventListener("click",function(e){var b=e.target.closest(".chip");if(!b)return;cat=b.dataset.c;
+    [].forEach.call(el.children,function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});render()})
+}
+function render(){
+  var q=document.getElementById("q").value.toLowerCase(),firm=document.getElementById("firm").checked;
+  var rows=F.filter(function(e){
+    if(cat!=="all"&&e[5]!==cat)return false;
+    if(firm&&e[6]==="l")return false;
+    if(q&&(e[2]+" "+e[3]+" "+e[7]).toLowerCase().indexOf(q)<0)return false;
+    return true}).sort(function(a,b){return a[0]<b[0]?-1:a[0]>b[0]?1:0});
+  var h="",last="";
+  rows.forEach(function(e){
+    var m=e[0].slice(0,7);
+    if(m!==last){last=m;var d=new Date(e[0]+"T12:00:00");h+='<h2 class="m">'+MN[d.getMonth()]+" "+d.getFullYear()+"</h2>"}
+    var cl=e[6]==="ok"?["ok","Date confirmed"]:e[6]==="w"?["warn","Date confirmed, details pending"]:["","Preliminary or secondary source"];
+    h+='<div class="row" style="--cc:var(--c-'+e[5]+')"><div class="d"><b>'+esc(e[1])+'</b></div><div class="t"><h3><span class="tag">'+FCATS[e[5]]+'</span><a href="'+esc(e[8])+'" target="_blank" rel="noopener">'+esc(e[2])+'</a></h3>'
+     +'<div class="meta">'+esc(e[3])+(e[4]?" · "+esc(e[4]):"")+'</div>'
+     +(e[7]?'<div class="note">'+esc(e[7])+'</div>':"")
+     +'<div class="conf '+cl[0]+'">'+cl[1]+'</div></div></div>'});
+  document.getElementById("list").innerHTML=h||'<p class="meta" style="margin-top:24px">No events match. Clear the search or turn off the filters.</p>';
+  document.getElementById("count").textContent=rows.length+" of "+F.length+" events"
+}
+document.getElementById("q").addEventListener("input",render);
+document.getElementById("firm").addEventListener("change",render);
+document.getElementById("watch").innerHTML=FWATCH.map(function(w){return "<li>"+esc(w)+"</li>"}).join("");
+chips();render();
+</script>
 </body>
 </html>
