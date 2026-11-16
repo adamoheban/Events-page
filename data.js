@@ -254,6 +254,20 @@ var E=[
 ["2027-01-30","Jan 30, 7pm","Underground Empire Wrestling: FTW '27","Florence Arena, Los Angeles","","wrestling","l","Listing site only.","https://socaluncensored.com/event/underground-empire-wrestling-presents-ftw-27-in-los-angeles-ca/"]
 ,
 ["2027-05-08","May 8, 2 to 8pm","Tequila and Mezcal Festival","Pershing Square, Downtown LA","GA and VIP tiers, price not listed","food","w","Date and venue confirmed on Eventbrite.","https://www.eventbrite.com/e/tequila-and-mezcal-festival-tickets-1988945158510"]
+,
+["2027-01-12", "Jan 12, 13, 16, 21, 24, 25, 28", "Olivia Rodrigo, The Unraveled Tour", "Intuit Dome, Inglewood", "", "music", "l", "On sale since May. Date list varies by source (Jan 17 on one).", "https://seatgeek.com/blog/olivia-rodrigo-announces-the-unraveled-tour-north-american-dates-opening-acts-and-tickets"],
+["2027-01-23", "Jan 23, 6:30pm", "Joyce Manor", "Kia Forum, Inglewood", "", "music", "l", "Resale listing only.", "https://www.tickpick.com/buy-joyce-manor-tickets-the-kia-forum-1-23-27-6pm/8167785/"],
+["2027-02-06", "Feb 6, 8pm", "Kenshi Yonezu", "Kia Forum, Inglewood", "", "music", "w", "On sale since Oct 22.", "https://www.ticketnews.com/2026/10/kenshi-yonezu-inglewood-tickets-on-sale-for-kia-forum-concert/"],
+["2027-02-26", "Feb 26, 8pm", "Morat", "Intuit Dome, Inglewood", "", "music", "l", "Listing only.", "https://songkick.com/concerts/43222746-morat-at-intuit-dome"],
+["2027-03-05", "Mar 5, 8pm", "2hollis", "Kia Forum, Inglewood", "", "music", "w", "On sale since Oct 28.", "https://www.ticketnews.com/2026/10/2hollis-inglewood-tickets-on-sale-for-the-kia-forum-concert/"],
+["2027-04-18", "Apr 18", "Nickelback", "Honda Center, Anaheim", "", "music", "l", "Listing only.", "https://www.eventworld.com"],
+["2027-04-22", "Apr 22", "Carly Rae Jepsen", "Kia Forum, Inglewood", "", "music", "w", "On sale since Oct 8.", "https://www.jambase.com/article/carly-rae-jepsen-tour-dates-2027"],
+["2027-04-27", "Apr 27", "Yoshiki, Japanese Heritage Night", "Dodger Stadium", "", "baseball", "l", "Single source. Ties to a Dodgers game, if confirmed.", "https://www.pulse.bot/music/news/yoshiki-to-perform-at-dodger-stadium-for-japanese-heritage-night-april-27-a98b92a4-f6b1-4d49-9927-d330b49951e8/"],
+["2027-05-22", "May 22, 7:30pm", "Niall Horan", "Kia Forum, Inglewood", "", "music", "l", "Resale listing only.", "https://www.tickpick.com/buy-niall-horan-tickets-the-kia-forum-5-22-27-7pm/7954226/"],
+["2027-05-25", "May 25, 8pm", "Damien Rice", "Greek Theatre, Los Angeles", "", "music", "w", "On sale since Oct 23.", "https://www.ticketnews.com/2026/10/damien-rice-los-angeles-tickets-on-sale-at-greek-theatre/"],
+["2027-05-27", "May 27, 8pm", "Calvin Harris", "Kia Forum, Inglewood", "", "music", "w", "On sale since Oct 22.", "https://www.ticketnews.com/2026/10/calvin-harris-inglewood-tickets-on-sale-at-kia-forum/"],
+["2027-06-18", "Jun 18", "Papa Roach", "Toyota Arena, Ontario", "", "music", "l", "Listing only.", "https://www.eventworld.com"],
+["2027-07-10", "Jul 10, 7pm", "Lizzy McAlpine", "Kia Forum, Inglewood", "From $77", "music", "l", "Listing only.", "https://www.jambase.com/show/lizzy-mcalpine-kia-forum-20270710"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -270,6 +284,7 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"Big touring acts with no LA or OC 2027 date found yet: Iron Maiden (closest is San Bernardino Apr 24), Guns N' Roses, Billie Eilish, Dua Lipa, Green Day, Red Hot Chili Peppers, Deftones, Kendrick Lamar, Linkin Park, Pearl Jam, Tool. The venue calendars for the Forum, Honda Center and Crypto.com Arena could not be opened.",
 "Spirits: no 2027 dates found for Whisky Live LA or LA Cocktail Week. Brouwerij West in San Pedro was reported in July 2026 to be closing.",
 "No 2027 dates found for AEW, TNA, ROH, UFC or PFL in LA or OC. PWG reportedly left its Reseda venue. WrestleMania 43 watch parties so far are New York only.",
 "More wine with no 2027 dates yet, from 2026 timing: Paso BlendFest on the Coast (Feb), Santa Ynez Wine Country Weekend (Presidents Day weekend), Ojai Wine Festival (June), Santa Barbara Vintners Festival (Oct), California Wine Festival Huntington Beach (Oct). The Temecula Balloon and Wine Festival lost its organizer contract in 2026, so it may not return.",
