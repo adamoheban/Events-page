@@ -300,6 +300,10 @@ var E=[
 ["2027-04-22", "Apr 22 evening", "Lyrid meteors", "Dark sky", "", "astro", "ok", "Poor year: moon about 96% lit.", "https://imo.net/files/meteor-shower/cal2027.pdf"],
 ["2027-05-06", "May 6, about 2am", "Eta Aquariid meteors", "Dark sky, pre-dawn", "", "astro", "ok", "Best 2027 shower: new moon the same night.", "https://imo.net/files/meteor-shower/cal2027.pdf"],
 ["2027-10-18", "Oct 18", "Saturn at opposition", "All night, rises at sunset", "", "astro", "ok", "Orionids peak Oct 22, moon after midnight.", "https://telescopeadvisor.com"]
+,
+["2026-11-21", "Nov 21, 10am to 6pm", "Huntington Holiday Market", "The Huntington, San Marino", "Free, capacity limited", "markets", "ok", "Tickets via the event page.", "https://www.huntington.org/event/huntington-holiday-market"],
+["2026-12-13", "Dec 13, 11am to 5pm", "USC Pacific Asia Museum Free 2nd Sunday", "46 N Los Robles Ave, Pasadena", "Free", "museum", "ok", "", "https://www.coloradoboulevard.net/events/free-2nd-sunday-usc-pacific-asia-museum-2026-12-13"],
+["2027-02-13", "Feb 13, 2pm and 8pm", "Pasadena Symphony Classics: Rachmaninoff Piano Concerto No. 2, Firebird", "Ambassador Auditorium, Pasadena", "Subscriptions from $129", "music", "ok", "Later: Mar 20 (Four Seasons) and May 1 (Shostakovich 5). The venue's future is reported uncertain.", "https://pasadenasymphony-pops.org/symphony-series-2026-27/"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -316,6 +320,7 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"Pasadena recurring: Norton Simon free first Fridays 4 to 7pm (Dec 4, Feb 5, Mar 5 and so on), Rose Bowl Flea Market 2nd Sunday ($15), PCC Flea 1st Sunday. Not found for 2027: Pasadena POPS, Santa Anita winter meet, Caltech Watson Lectures, Doo Dah Parade, JPL open house.",
 "Moon phases for dark-sky planning (Pacific time, from USNO): new moons Jan 7 (12:24pm), Feb 6, Mar 8, Apr 6, May 6, Jun 4, Jul 3, Aug 2, Aug 31, Sep 29, Oct 29, Nov 27, Dec 27, 2027. Full moons Jan 22, Feb 20, Mar 22, Apr 20, May 20, Jun 18, Jul 18, Aug 17, Sep 15, Oct 15, Nov 13, Dec 13, 2027. Also: Starship test flights, ISS and Starlink pass times for LA, and Vandenberg launches after 2026 were not found; Heavens-Above and Spot the Station are the tools to check.",
 "Nature windows without exact dates: Goleta Ellwood monarch grove (Oct to Feb, peak mid-Dec, free, about 1h45m away), Antelope Valley Poppy Reserve (bloom Mar to May, peak mid-April, 2027 dates not announced), Joshua Tree Night Sky Festival (2027 not announced). No 2027 fee-free park days or America the Beautiful price found.",
 "Small-venue gaps: Resident, Satellite, Hotel Cafe, Echo, Roxy, Baked Potato, Groundlings, UCB and Netflix Is A Joke Fest 2027 had no dates found. Pappy and Harriet's in Pioneertown has shows (Swervedriver Dec 10, Buck Meek Dec 11) but is in the high desert, about 2.5 hours away.",
