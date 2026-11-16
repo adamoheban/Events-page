@@ -268,6 +268,19 @@ var E=[
 ["2027-05-27", "May 27, 8pm", "Calvin Harris", "Kia Forum, Inglewood", "", "music", "w", "On sale since Oct 22.", "https://www.ticketnews.com/2026/10/calvin-harris-inglewood-tickets-on-sale-at-kia-forum/"],
 ["2027-06-18", "Jun 18", "Papa Roach", "Toyota Arena, Ontario", "", "music", "l", "Listing only.", "https://www.eventworld.com"],
 ["2027-07-10", "Jul 10, 7pm", "Lizzy McAlpine", "Kia Forum, Inglewood", "From $77", "music", "l", "Listing only.", "https://www.jambase.com/show/lizzy-mcalpine-kia-forum-20270710"]
+,
+["2026-11-28", "Nov 28", "Dweezil Zappa", "Orpheum Theatre, Los Angeles", "", "music", "l", "Listing only.", "https://songkick.com/concerts/43251255"],
+["2026-11-28", "Nov 28, 8pm", "Emma Ruth Rundle", "Lodge Room, Highland Park", "", "music", "l", "Listing only.", "https://tickpick.com/buy-emma-ruth-rundle-tickets-lodge-room-highland-park-11-28-26-8pm/8159483"],
+["2026-12-03", "Dec 3, 7pm", "Deap Vally", "Troubadour, West Hollywood", "", "music", "l", "From $35. Listing only.", "https://jambase.com/show/deap-vally-the-troubadour-20261203"],
+["2026-12-03", "Dec 3", "Squirrel Nut Zippers", "The Bellwether, Los Angeles", "", "music", "l", "Listing only.", "https://songkick.com/concerts/43291486"],
+["2026-12-04", "Dec 4", "Karriem Riggins and Gena, with Pino Palladino", "Blue Note LA", "", "music", "l", "Listing only.", "https://songkick.com/concerts/43422150"],
+["2026-12-05", "Dec 5", "Emancipator", "El Rey Theatre, Los Angeles", "", "music", "l", "Listing only.", "https://songkick.com/concerts/43346142"],
+["2026-12-06", "Dec 6", "Postmodern Jukebox", "Grove of Anaheim", "", "music", "l", "Listing only.", "https://songkick.com/concerts/43198892"],
+["2026-12-10", "Dec 10 to 12", "Robert Glasper Experiment", "Blue Note LA", "", "music", "l", "Several sets. Listing only.", "https://songkick.com/concerts/43432420"],
+["2026-12-13", "Dec 13", "Wooten Brothers with Victor Wooten", "Teragram Ballroom, Los Angeles", "", "music", "l", "Listing only.", "https://songkick.com/concerts/43293588"],
+["2026-12-18", "Dec 18 to 20", "Lucius", "Largo at the Coronet, West Hollywood", "", "music", "l", "Three nights. Listing only.", "https://songkick.com/concerts/43397856"],
+["2026-12-19", "Dec 19, 8pm", "Pokey LaFarge", "Lodge Room, Highland Park", "", "music", "l", "Listing only.", "https://tickpick.com/buy-pokey-lafarge-tickets-lodge-room-highland-park-12-19-26-8pm/7961152"],
+["2026-12-30", "Dec 30 to 31", "Seth MacFarlane", "Blue Note LA", "", "music", "l", "Two nights. Listing only.", "https://songkick.com/concerts/43502580"]
 ];
 var MK=[
 ["Pasadena City College Flea","1st Sunday, not January","Dec 6, Feb 7, Mar 7","8am to 3pm · Free, $2 parking"],
@@ -284,6 +297,7 @@ var MK=[
 ["OC college swap meets","Weekends: Golden West, OCC, Cypress","Every weekend","Free · hours vary"]
 ];
 var WATCH=[
+"Small-venue gaps: Resident, Satellite, Hotel Cafe, Echo, Roxy, Baked Potato, Groundlings, UCB and Netflix Is A Joke Fest 2027 had no dates found. Pappy and Harriet's in Pioneertown has shows (Swervedriver Dec 10, Buck Meek Dec 11) but is in the high desert, about 2.5 hours away.",
 "Big touring acts with no LA or OC 2027 date found yet: Iron Maiden (closest is San Bernardino Apr 24), Guns N' Roses, Billie Eilish, Dua Lipa, Green Day, Red Hot Chili Peppers, Deftones, Kendrick Lamar, Linkin Park, Pearl Jam, Tool. The venue calendars for the Forum, Honda Center and Crypto.com Arena could not be opened.",
 "Spirits: no 2027 dates found for Whisky Live LA or LA Cocktail Week. Brouwerij West in San Pedro was reported in July 2026 to be closing.",
 "No 2027 dates found for AEW, TNA, ROH, UFC or PFL in LA or OC. PWG reportedly left its Reseda venue. WrestleMania 43 watch parties so far are New York only.",
