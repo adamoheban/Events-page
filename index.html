@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>LA and OC Year Ahead</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
@@ -72,7 +77,8 @@ footer a{color:var(--accent)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--c-runs:#f0c552}}
 :root[data-theme="dark"]{--c-runs:#f0c552}
 </style>
-
+</head>
+<body>
 <div class="wrap">
 <header>
   <h1>LA and OC Year Ahead</h1>
@@ -448,3 +454,5 @@ document.getElementById("markets").innerHTML=MK.map(function(m){return '<div cla
 document.getElementById("watch").innerHTML=WATCH.map(function(w){return "<li>"+esc(w)+"</li>"}).join("");
 chips();render();
 </script>
+</body>
+</html>
